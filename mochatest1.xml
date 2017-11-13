@@ -1,0 +1,22 @@
+<testsuite name="Mocha Tests" tests="4" failures="2" errors="2" skipped="0" timestamp="Mon, 13 Nov 2017 16:25:56 GMT" time="1.104">
+<testcase classname="Get Weather" name="with valid zip code" time="0"><failure>expected 200 to equal 2000
+AssertionError: expected 200 to equal 2000
+  at Test.&lt;anonymous&gt; (tests/server/apiv1.spec.js:23:28)
+  at Test.assert (node_modules/supertest/lib/test.js:156:6)
+  at Server.assert (node_modules/supertest/lib/test.js:127:12)
+  at emitCloseNT (net.js:1552:8)
+  at _combinedTickCallback (internal/process/next_tick.js:77:11)
+  at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+</failure></testcase>
+<testcase classname="Get Weather" name="with without zip code" time="0"><failure>expected 400 to equal 4000
+AssertionError: expected 400 to equal 4000
+  at Test.&lt;anonymous&gt; (tests/server/apiv1.spec.js:32:28)
+  at Test.assert (node_modules/supertest/lib/test.js:156:6)
+  at Server.assert (node_modules/supertest/lib/test.js:127:12)
+  at emitCloseNT (net.js:1552:8)
+  at _combinedTickCallback (internal/process/next_tick.js:77:11)
+  at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+</failure></testcase>
+<testcase classname="Get Weather" name="with invalid zip code" time="0.245"/>
+<testcase classname="Get Weather" name="with incomplete zip code" time="0.358"/>
+</testsuite>
